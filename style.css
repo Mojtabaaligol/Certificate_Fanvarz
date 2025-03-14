@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 100px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* تنظیم لوگوها */
+.header {
+    position: relative;
+    width: 100%;
+    height: 200px; /* ارتفاع هدر */
+}
+
+.logo {
+    width: 200px; /* اندازه لوگو */
+    height: auto;
+    position: absolute;
+    top: 10px;
+}
+
+.left-logo {
+    left: 50px;
+    margin-top: 0p;
+}
+
+.right-logo {
+    right: 50px;
+}
+
+/* تنظیمات برای صفحه‌های کوچکتر (موبایل) */
+@media screen and (max-width: 768px) {
+    .header {
+        position: relative;
+        width: 100%;
+        height: 100px; /* ارتفاع هدر */
+    }
+
+    .logo {
+        width: 150px; /* کوچک‌تر شدن لوگو در موبایل */
+        top: 5px;
+    }
+
+    .left-logo {
+        left: 100px;
+    }
+
+    .right-logo {
+        right: 100px;
+    }
+}
+
+/* تنظیمات برای صفحه‌های خیلی کوچک (کمتر از 480px) */
+@media screen and (max-width: 480px) {
+    .header {
+        position: relative;
+        width: 100%;
+        height: 50px; /* ارتفاع هدر */
+    }
+    .logo {
+        width: 100px; /* کوچک‌تر شدن بیشتر */
+        top: 5px;
+    }
+
+    .left-logo {
+        left: 5px;
+    }
+
+    .right-logo {
+        right: 5px;
+    }
+}
